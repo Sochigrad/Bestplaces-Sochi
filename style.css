@@ -1,0 +1,142 @@
+:root {
+  --marine-blue: #005f73;
+  --light-marine: #94d2bd;
+  --sand: #e9d8a6;
+  --coral: #ee9b00;
+  --deep-sea: #001219;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  background-color: #f8f9fa;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Playfair Display', serif;
+  color: var(--marine-blue);
+}
+
+.cover {
+  background-image: linear-gradient(rgba(0, 95, 115, 0.7), rgba(0, 18, 25, 0.7)), url('https://s3.rosakhutor.ru/upload/iblock/fca/9qtaf3t82emvfkavbcyilk7ud55olqkb/tomkulibyakin_3000piks_250_result.webp');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.section-title {
+  position: relative;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 80px;
+  background-color: var(--coral);
+}
+
+.attraction-card {
+  margin-bottom: 70px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 10px 15px -3px rgba(0, 18, 25, 0.1), 0 4px 6px -2px rgba(0, 18, 25, 0.05);
+  background-color: white;
+  transition: transform 0.3s ease;
+}
+
+.attraction-card:hover {
+  transform: translateY(-5px);
+}
+
+.attraction-image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.attraction-content {
+  padding: 30px;
+}
+
+.brand-signature {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.toc-item {
+  padding: 10px 15px;
+  border-left: 3px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.toc-item:hover {
+  border-left: 3px solid var(--coral);
+  background-color: rgba(148, 210, 189, 0.2);
+}
+
+.marine-decoration {
+  position: relative;
+}
+
+.marine-decoration::before {
+  content: "\f13d";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: var(--light-marine);
+  position: absolute;
+  font-size: 24px;
+  left: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.wave-divider {
+  height: 30px;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23005f73" fill-opacity="0.3" d="M0,128L48,144C96,160,192,192,288,186.7C384,181,480,139,576,138.7C672,139,768,181,864,181.3C960,181,1056,139,1152,133.3C1248,128,1344,160,1392,176L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>');
+  background-size: cover;
+  margin: 50px 0;
+}
+
+.brand-footer {
+  background-color: var(--marine-blue);
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 50px;
+}
+
+.table-of-contents {
+  background-color: rgba(148, 210, 189, 0.1);
+  border-radius: 10px;
+  padding: 30px;
+  margin: 30px 0;
+}
+
+.attraction-card {
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.wave-divider {
+  page-break-before: always;
+  break-before: always;
+}
