@@ -140,3 +140,15 @@ h5 {
   page-break-before: always;
   break-before: always;
 }
+
+@media (max-width: 650px) {
+  .text-5xl {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .text-5xl {
+    font-size: 1.5rem;
+  }
+}
