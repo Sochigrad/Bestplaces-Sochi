@@ -80,6 +80,7 @@ h5 {
   font-family: 'Playfair Display', serif;
   letter-spacing: 2px;
   text-transform: uppercase;
+  color: yellow;
 }
 
 .toc-item {
@@ -140,6 +141,11 @@ h5 {
   page-break-before: always;
   break-before: always;
 }
+
+.text-sm, .text-xl {
+  color: yellow
+}
+
 
 @media (max-width: 650px) {
   .text-5xl {
