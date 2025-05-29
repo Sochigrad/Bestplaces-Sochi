@@ -145,10 +145,16 @@ h5 {
   .text-5xl {
     font-size: 2rem;
   }
+  .p-10 {
+    padding: 0.5rem;
+  }
 }
 
 @media (max-width: 400px) {
   .text-5xl {
+    font-size: 1.5rem;
+  }
+  .text-4xl {
     font-size: 1.5rem;
   }
 }
